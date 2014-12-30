@@ -1,0 +1,22 @@
+{
+  "name": "passthru-client-example",
+  "version": "0.1.0",
+  "description": "An example client to the passthru service",
+  "main": "get-profile.js",
+  "scripts": {
+    "test": "node get-profile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LDSorg/passthru-client-example.git"
+  },
+  "keywords": [
+    "passthru"
+  ],
+  "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.com/)",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/LDSorg/passthru-client-example/issues"
+  },
+  "homepage": "https://github.com/LDSorg/passthru-client-example"
+}
