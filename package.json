@@ -2,9 +2,9 @@
   "name": "passthru-client-example",
   "version": "0.1.0",
   "description": "An example client to the passthru service",
-  "main": "get-profile.js",
+  "main": "token-exchange.js",
   "scripts": {
-    "test": "node get-profile.js"
+    "test": "node token-exchange.js"
   },
   "repository": {
     "type": "git",
