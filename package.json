@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/LDSorg/passthru-client-example/issues"
   },
-  "homepage": "https://github.com/LDSorg/passthru-client-example"
+  "homepage": "https://github.com/LDSorg/passthru-client-example",
+  "dependencies": {
+    "bluebird": "^2.5.2",
+    "request": "2.44.0",
+    "tough-cookie": "0.12.1"
+  }
 }
