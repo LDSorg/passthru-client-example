@@ -1,8 +1,9 @@
-var https = require('https')
-  , fs = require('fs')
-  , testConfig = require('./config')
-  , options
-  ;
+'use strict';
+
+var https = require('https');
+var fs = require('fs');
+var testConfig = require('./config');
+var options;
 
 options = {
   host: testConfig.hostname
