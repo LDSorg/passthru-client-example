@@ -1,17 +1,20 @@
 'use strict';
 
-var PromiseA = require('bluebird').Promise
-  , request = require('request')
-  , requestAsync = PromiseA.promisify(request)
-  , testConfig = require('./config')
-  , JarSON = require('./jarson')
-  , testAgent = require('./test-agent')
-  ;
+var PromiseA = require('bluebird').Promise;
+var request = require('request');
+var requestAsync = PromiseA.promisify(request);
+var testConfig = require('./config');
+var JarSON = require('jarson');
+var testAgent = require('./test-agent');
+// don't really store secrets in a module as they would stay cached unencrypted in memory
+// this is just for a short-lived test, not a long-running process
+var username = require('./real-secret.js').username;
+var password = require('./real-secret.js').password;
 
 requestAsync({
   url: testConfig.proxyUrl + '/api/login'
 , method: 'POST'
-, json: { username: testConfig.username, password: testConfig.password }
+, json: { username: username, password: password }
 , agent: testAgent
 }).spread(function (resp, body) {
   console.log('sign-in result');
