@@ -1,6 +1,6 @@
 {
   "name": "passthru-client-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An example client to the passthru service",
   "main": "token-exchange.js",
   "scripts": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/LDSorg/passthru-client-example",
   "dependencies": {
     "bluebird": "^2.5.2",
+    "jarson": "^1.0.0",
     "request": "2.44.0",
     "tough-cookie": "0.12.1"
   }
